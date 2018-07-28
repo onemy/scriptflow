@@ -3,9 +3,9 @@
 
 Use the newly added Nashorn Javascript engine in JDK8 as flow control, and use Java components as an execution step.
 
-JS:　if{<br>
+JS:　if {<br>
 　　　　new JavaComponent1();<br>
-JS:　}else{<br>
+JS:　} else {<br>
 　　　　new JavaComponent2();<br>
 JS:　}<br>
 
