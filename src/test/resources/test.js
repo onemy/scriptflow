@@ -5,11 +5,7 @@ var run = function(parameters) {
 	//</scriptFlow:flow:step:varDefine>
 	
 	//<scriptFlow:flow:step:try>
-//	try{
-	
-//	}catch(e){
-//		print('Error ：' + e);
-//	}
+
 	//</scriptFlow:flow:step:try>	
 		//<scriptFlow:flow:step:javascript>
 		return_value+="aaaaaa";
