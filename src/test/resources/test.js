@@ -24,7 +24,29 @@ var run = function(parameters) {
 		return_value=ToJSON.execute();
 		//</scriptFlow:flow:step:ToJSON>
 		
-    
+		
+		//继承和扩展线程类
+		var Run = Java.type("java.lang.Runnable");
+		var MyRun = Java.extend(Run, {
+		    run: function() {
+		    	Thread.sleep(5000);
+		        print("I am running in separate thread");
+		        
+		    }
+		});
+		//构造
+		var Thread = Java.type("java.lang.Thread");
+		var th = new Thread(new MyRun());
+		print("Thread:"+th.getId());
+		th.start();
+		 
+		 
+		var th1 = new Thread(new MyRun());
+		print("Thread:"+th1.getId());
+		th1.start();
+
+
+		
     //<scriptFlow:flow:step:return>
     return return_value;
 	//</scriptFlow:flow:step:return>

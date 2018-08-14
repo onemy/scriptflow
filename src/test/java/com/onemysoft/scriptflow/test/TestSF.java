@@ -21,6 +21,9 @@ public class TestSF {
 	/**
 	 * @param args
 	 */
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -28,7 +31,7 @@ public class TestSF {
 			Flow job=new Flow();
 			
 			job.setScriptSourceType(ScriptSourceTypeEnum.FILE);
-			job.setScriptFileUrl("C:\\work\\workspace\\scriptflow\\src\\test\\resources\\script.js");
+			job.setScriptFileUrl("C:\\work\\workspace\\scriptflow\\src\\test\\resources\\test.js");
 			
 			Map paras=new HashMap();
 			paras.put("key2", 123);
