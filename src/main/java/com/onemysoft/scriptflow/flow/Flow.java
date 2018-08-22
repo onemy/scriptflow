@@ -71,7 +71,7 @@ public class Flow {
 				if(scriptFileUrl==null) throw new AppException("file url is null !");
 				engine.eval(new FileReader(scriptFileUrl));
 			}else if(scriptSourceType.equals(scriptSourceType.TEXT)){
-				if(scriptFileUrl==null) throw new AppException("script content is null !");
+				if(scriptSource==null) throw new AppException("script content is null !");
 				engine.eval(scriptSource);
 			}else{
 				engine.eval("");
@@ -86,8 +86,12 @@ public class Flow {
 			if(LOG.isDebugEnabled()){
 				LOG.debug("job run result : "+result);
 			}
+			if(result==null){
+				return "null";
+			}else{
+				return result.toString();
+			}
 			
-			return result.toString();
 
 			
 		}catch(Exception e){

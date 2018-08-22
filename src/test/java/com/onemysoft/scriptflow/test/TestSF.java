@@ -31,11 +31,11 @@ public class TestSF {
 			Flow job=new Flow();
 			
 			job.setScriptSourceType(ScriptSourceTypeEnum.FILE);
-			job.setScriptFileUrl("C:\\work\\workspace\\scriptflow\\src\\test\\resources\\test.js");
+			job.setScriptFileUrl("C:\\work\\workspace\\scriptflow\\src\\test\\resources\\test2.js");
 			
 			Map paras=new HashMap();
 			paras.put("key2", 123);
-			paras.put("id", 5);
+			paras.put("name", 5);
 			job.setParameters(paras);
 			
 			for(int i=0;i<1;i++){
