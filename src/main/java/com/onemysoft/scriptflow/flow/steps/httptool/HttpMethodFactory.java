@@ -1,7 +1,7 @@
 /**   
 * 
 */
-package com.onemysoft.scriptflow.flow.steps.httpclient;
+package com.onemysoft.scriptflow.flow.steps.httptool;
 
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.DeleteMethod;
