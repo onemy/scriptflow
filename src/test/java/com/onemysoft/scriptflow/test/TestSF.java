@@ -31,7 +31,7 @@ public class TestSF {
 			Flow job=new Flow();
 			
 			job.setScriptSourceType(ScriptSourceTypeEnum.FILE);
-			job.setScriptFileUrl("C:\\work\\workspace\\scriptflow\\src\\test\\resources\\test2.js");
+			job.setScriptFileUrl("C:\\work\\workspace\\scriptflow\\src\\test\\resources\\sqlExecute.js");
 			
 			Map paras=new HashMap();
 			paras.put("key2", 123);
