@@ -11,7 +11,23 @@ package com.onemysoft.scriptflow.flow.steps;
 *  
 */
 public abstract class Step {
-
+	private String stepName;
+	
 	public abstract Object execute();
+
+	/**
+	 * @return the stepName
+	 */
+	public String getStepName() {
+		return stepName;
+	}
+
+	/**
+	 * @param stepName the stepName to set
+	 */
+	public void setStepName(String stepName) {
+		this.stepName = stepName;
+	}
+	
 	
 }
